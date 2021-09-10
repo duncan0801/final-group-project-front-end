@@ -1,0 +1,79 @@
+.wrapper {
+	margin: 20px;
+}
+.homeH2 {
+	color: #09b098;
+	font-size: 32px;
+	text-align: center;
+}
+.services ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	list-style: none;
+	grid-gap: 5px;
+}
+.services li {
+	background-color: #09b098;
+	border-radius: 2px;
+	display: grid;
+	place-content: center;
+	height: 150px;
+}
+.services li h3 {
+	text-align: center;
+	color: rgb(228, 228, 228);
+}
+section.counsellors {
+	background-color: #09b098;
+	display: grid;
+	place-items: center;
+	padding-bottom: 40px;
+}
+section.counsellors h2 {
+	color: white;
+}
+section.counsellors h3 {
+	text-align: center;
+	color: rgb(162, 255, 227);
+}
+.counsellor-container {
+	display: grid;
+	background-color: #09b098;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+.counsellor-disc img {
+	border-radius: 50%;
+	width: 130px;
+}
+button.view-counsellors-btn,
+button.create-account {
+	background: #175c62;
+	border-radius: 5px;
+	color: white;
+	border: none;
+	padding: 10px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+	font-size: large;
+}
+button.create-account {
+	padding: 5px;
+	margin-top: 5px;
+}
+section.how-it-works ol {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	place-content: center;
+	padding: 40px;
+}
+
+.logo-container {
+	display: grid;
+	grid-template-rows: auto;
+	place-content: center;
+	place-items: center;
+}
+.logo-container p {
+	text-align: center;
+}

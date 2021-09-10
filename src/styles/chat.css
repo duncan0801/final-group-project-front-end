@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+body {
+	display: grid;
+}
+.chat {
+	display: grid;
+	place-items: center;
+}
+
+.chat-wrapper {
+	/* background: linear-gradient(to right, #09b098 0%, #175c62 100%); */
+	display: grid;
+	grid-template:
+		"chat-title chat-title" 71px
+		"chat-message-list chat-message-list" 1fr
+		"chat-form chat-form" 78px
+		/ 1fr 1fr;
+
+	margin: 30px;
+	min-width: 800px;
+	max-width: 1000px;
+	min-width: 800px;
+	height: 70vh;
+	border-radius: 10px;
+	place-content: center;
+}
+
+.search-container,
+.new-message-container {
+	background: #09b098;
+}
+
+.search-container {
+	grid-area: search-container;
+	border-radius: 10px 0 0 0;
+	padding: 0 20px;
+	box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.75);
+	display: grid;
+	align-items: center;
+}
+.search-container {
+	color: #eee;
+	outline: none;
+	font-weight: bold;
+	border-radius: 2px;
+	/* height: 30px; */
+	border: 0;
+	padding-left: 48px;
+	padding-right: 20px;
+	font-size: 1.4rem;
+	/* background: url("../public/pictures/search-icon.svg") no-repeat
+		rgba(255, 255, 255, 1); */
+	background-position: 15pc center;
+	background-size: 20px 20px;
+}
+.search-container input {
+	height: 50%;
+}
+.search-container input::placeholder {
+	color: #ddd;
+
+	font-weight: bold;
+}
+.chat-title {
+	grid-area: chat-title;
+	color: #243157;
+	font-weight: bold;
+	font-size: 2rem;
+	border-radius: 0 10px 0 0;
+	box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.75);
+	display: grid;
+	place-content: center;
+}
+
+.chat-form {
+	grid-area: chat-form;
+	border-radius: 0 0 10px 10px;
+	border-top: 1px solid rgba(144, 144, 144, 0.096);
+}
+.chat-form form {
+	margin: 0 20px;
+}
+.chat-form form .container {
+	display: grid;
+	grid-template-columns: 1fr auto;
+}
+.chat-form form textarea {
+	margin: 5px;
+	height: 100%;
+	width: 90%;
+	padding: 10px;
+}
+.chat-message-list {
+	grid-area: chat-message-list;
+	overflow-y: scroll;
+}
+
+.chat-title,
+.chat-form {
+	background: #eee;
+}
+.profile-pic {
+	width: 50px;
+}
+.profile-pic {
+	grid-area: profile-pic;
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	object-fit: cover;
+}
+.name {
+	grid-area: name;
+	font-weight: bold;
+}
+.message-content {
+	grid-area: message-content;
+}
+
+li.message {
+	border-radius: 5px;
+	padding: 20px;
+	background: rgba(0, 128, 128, 0.678);
+	margin: 10px 5px;
+	display: grid;
+	grid-template-areas:
+		"name profile-pic"
+		"message-content profile-pic";
+	grid-template-columns: 1fr auto;
+}
+.counsellor-message {
+	border-radius: 5px;
+	padding: 20px;
+	background: rgba(140, 255, 255, 0.404);
+	margin: 10px 5px;
+	display: grid;
+	gap: 20px;
+	grid-template-areas:
+		"profile-pic name"
+		"profile-pic message-content ";
+	grid-template-columns: auto 1fr;
+	text-align: right;
+}
+textarea {
+	resize: none;
+	width: 80%;
+	border: none;
+	border-radius: 10px;
+}
+
+.chat-form button {
+	border: none;
+}

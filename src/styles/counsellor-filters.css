@@ -1,0 +1,9 @@
+form.counsellor-filters {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  gap: 2rem;
+}
+
+.years-of-experience {
+    width: 100%;
+}

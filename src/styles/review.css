@@ -1,0 +1,124 @@
+.reviews {
+  padding: 20px;
+}
+
+.review-banner {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100vw;
+  height: 230px;
+}
+
+.review-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.review-hero {
+  font-weight: 600;
+  text-align: center;
+  padding-top: 45px;
+}
+
+.reviews-wrapper {
+  margin: 30px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 15px;
+}
+
+.review-card {
+  width: 0.5fr;
+  display: grid;
+  padding: 15px 15px;
+  grid-gap: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.frame-img-review {
+  width: 55px;
+  height: 55px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.frame-img-review img {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%;
+  height: 100%;
+  width: auto;
+}
+
+.user-details {
+  display: grid;
+  /* grid-template-columns: auto 1fr; */
+  grid-gap: 5px;
+  align-items: center;
+  justify-items: baseline;
+  margin-left: 40px;
+}
+
+blockquote {
+  text-align: initial;
+  /* font-size: 16px; */
+  padding-left: 40px;
+  padding-bottom: 10px;
+  font-size: large;
+  color: #4b4848;
+  font-family: Gill Sans, sans-serif;
+}
+
+.name-surname {
+  font-size: 0.9em;
+  color: #1a5972;
+  font-weight: 600;
+}
+
+.city {
+  font-size: 0.7em;
+  justify-self: baseline;
+}
+
+.bottom-review-card {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  justify-items: center;
+  margin-left: 25px;
+}
+
+.counsellor-reviews-wrapper {
+  justify-self: baseline;
+  margin: 0;
+}
+
+.counsellor-reviews-name {
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  color: #1a5972;
+  font-weight: 600;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.counsellor-reviews-speciality {
+  margin: 0;
+  padding-top: 5px;
+}
+.review-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #175c62;
+  color: white;
+  border: 0;
+}

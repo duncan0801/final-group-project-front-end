@@ -1,0 +1,35 @@
+article.counsellor-card {
+  border: grey 1px solid;
+  width: 25rem;
+  height: 30rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 300px repeat(3, 75px);
+  place-items: center;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: lightgray;
+}
+
+img.counsellor-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h3.counsellor-name {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+h4.counsellor-specialties {
+  text-decoration: none;
+}

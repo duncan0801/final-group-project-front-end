@@ -1,0 +1,67 @@
+.login-page-container {
+  padding-top: 75px;
+  margin-left: 50vh;
+  margin-right: 50vh;
+  display: grid;
+  justify-items: center;
+}
+.top-login-page {
+  display: grid;
+  grid-template-rows: 0.3fr 0.5fr;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.login-page-header {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 55px;
+  letter-spacing: 0px;
+  color: rgb(34, 47, 45);
+}
+
+.login-page-h2 {
+  font-family: Roboto, sans-serif;
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: rgb(69, 74, 94);
+}
+
+.form-wrapper {
+  display: grid;
+  place-items: center;
+}
+
+form.login {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+}
+
+.login-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #175c62;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logo-page-h3 {
+  font-family: Roboto, sans-serif;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: rgb(89, 110, 146);
+}
+
+.logo-page-sign-up {
+  text-decoration: none;
+  color: #175c62;
+}

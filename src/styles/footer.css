@@ -1,0 +1,26 @@
+footer {
+	background-color: #243157;
+	/* position: absolute;
+	bottom: 0px;
+	width: 100%; */
+	height: 100px;
+	display: grid;
+	grid-template-columns: auto auto 1fr;
+	place-content: center;
+	padding: 40px;
+}
+
+.link-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	place-items: center;
+}
+
+.link-list li a {
+	color: white;
+	text-decoration: none;
+}
+.link-list li a:hover {
+	color: white;
+	text-decoration: underline;
+}

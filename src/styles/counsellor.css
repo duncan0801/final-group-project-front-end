@@ -1,0 +1,133 @@
+.single-counsellor-page {
+  display: grid;
+}
+
+.single-counsellor-page-header {
+  display: grid;
+}
+
+.single-counsellor-top-header {
+  /* padding: 20px; */
+  padding-top: 35px;
+  padding-left: 55px;
+  background-color: #253158;
+  height: 125px;
+}
+
+.single-counsellor-name {
+  font-size: 36px;
+  color: white;
+}
+
+.single-counsellor-bottom-header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 50px;
+  background-color: #434443;
+  color: #dcdddc;
+}
+
+.links-singlecounsellor-page {
+  text-decoration: none;
+  color: #dcdddc;
+}
+
+.frame-img-singleCounsellor-page {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.frame-img-singleCounsellor-page img {
+  display: inline;
+  object-fit: cover;
+  margin: 0 auto;
+  /* margin-left: -25%; */
+  height: 100%;
+  width: auto;
+  /* width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover; */
+  /* position: fixed; */
+}
+
+.single-counsellor-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 0.4fr) 1fr;
+  list-style: none;
+}
+
+.link-to-book-appointment {
+  padding: 0.7em 0.4em;
+  border-radius: 5px;
+  border: 0;
+  background-color: #e35f39;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+}
+
+.main-single-counsellor-page {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 0.3fr;
+}
+
+.singleCounsellor-right-column {
+  display: grid;
+  grid-gap: 30px;
+  padding-top: 15px;
+  justify-content: center;
+  grid-template-rows: 0.4fr 0.2fr 1fr;
+}
+
+.singleCounsellor-left-column {
+  display: grid;
+  grid-gap: 5px;
+  justify-content: center;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.abbout-me-singCoun-section,
+.specialties-singCoun-section,
+.licensing-singCoun-section,
+.reviews-singCoun-section {
+  background-color: white;
+  padding: 40px;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.title-single-counsellor-page {
+  color: #0daf98;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.about-info,
+.greeting,
+.best-wishes,
+.single-counsellor-date-review {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.anchor-link {
+  display: block;
+  position: relative;
+  top: -270px;
+  visibility: hidden;
+}

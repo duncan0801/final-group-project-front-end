@@ -1,0 +1,77 @@
+section.appointments {
+  display: grid;
+  place-items: center;
+}
+
+.top-login-page {
+  display: grid;
+  grid-template-rows: 0.3fr 0.5fr;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.Book-appointment-page-header {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 55px;
+  letter-spacing: 0px;
+  color: rgb(34, 47, 45);
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.book-appointment-page-h2 {
+  font-family: Roboto, sans-serif;
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: rgb(69, 74, 94);
+}
+
+.book--appointment-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #175c62;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* form.select-appointment {
+	display: grid;
+	grid-template-rows: auto 1fr;
+	gap: 2rem;
+}
+
+div.available-appointments {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 2rem;
+}
+
+button.appointment-time {
+	display: grid;
+	place-items: center;
+	border: solid gray 1px;
+	border-radius: 10px;
+	padding: 5%;
+}
+
+button.appointment-time:hover {
+	background-color: gray;
+}
+
+button.appointment-time:active {
+	background-color: blueviolet;
+	gap: 1rem;
+}
+
+div.appointment-time {
+	border: gray;
+} */
