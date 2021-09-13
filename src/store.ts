@@ -191,7 +191,7 @@ const useStore = create<Store>(
 				.then((entity) => set({ counsellors: entity.data }));
 		},
 		fetchCounsellorById: (id) => {
-			fetch(`${backEndBaseURL}//counsellors/${id}`)
+			fetch(`${backEndBaseURL}/counsellors/${id}`)
 				.then((res) => res.json())
 				.then((counsellor) => set({ counsellor: counsellor.data }));
 		},
