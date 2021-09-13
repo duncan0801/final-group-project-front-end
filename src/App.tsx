@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
 import "./App.css";
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Redirect,
 } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -22,60 +21,60 @@ import AddReview from "./pages/AddReview";
 import AppointmentSuccess from "./pages/AppointmentSuccess";
 
 function App() {
-  const loggedinUser = useStore((state) => state.loggedinUser);
+	const loggedinUser = useStore((state) => state.loggedinUser);
 
-  return (
-    <div className="app">
-      <Header />
-      <main>
-        <Switch>
-          <Route path="/" exact>
-            <Redirect to="/home" />
-          </Route>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/faq">
-            <FAQ />
-          </Route>
-          <Route path="/reviews">
-            <Reviews />
-          </Route>
-          <Route path="/add-review">
-            <AddReview />
-          </Route>
-          <Route path="/chat/user/:id">
-            <Chat />
-          </Route>
-          <Route path="/user/:id">
-            <User />
-          </Route>
-          <Route path="/bookings/counsellor/booking-success/:id">
-            <AppointmentSuccess />
-          </Route>
-          <Route path="/bookings/counsellor/:id">
-            <Appointments />
-          </Route>
-          <Route path="/counsellors/:id">
-            <SingleCounsellor />
-          </Route>
-          <Route path="/counsellors">
-            <Counsellors />
-          </Route>
-          <Route exact path="/signup">
-            <Signup />
-          </Route>
-          <Route exact path="/login">
-            {loggedinUser ? (
-              <Redirect to={`user/${loggedinUser.id}`} />
-            ) : (
-              <Login />
-            )}
-          </Route>
-        </Switch>
-      </main>
-    </div>
-  );
+	return (
+		<div className="app">
+			<Header />
+			<main>
+				<Switch>
+					<Route path="/" exact>
+						<Redirect to="/home" />
+					</Route>
+					<Route path="/home">
+						<Home />
+					</Route>
+					<Route path="/faq">
+						<FAQ />
+					</Route>
+					<Route path="/reviews">
+						<Reviews />
+					</Route>
+					<Route path="/add-review">
+						<AddReview />
+					</Route>
+					<Route path="/chat/user/:id">
+						<Chat />
+					</Route>
+					<Route path="/user/:id">
+						<User />
+					</Route>
+					<Route path="/bookings/counsellor/booking-success/:id">
+						<AppointmentSuccess />
+					</Route>
+					<Route path="/bookings/counsellor/:id">
+						<Appointments />
+					</Route>
+					<Route path="/counsellors/:id">
+						<SingleCounsellor />
+					</Route>
+					<Route path="/counsellors">
+						<Counsellors />
+					</Route>
+					<Route exact path="/signup">
+						<Signup />
+					</Route>
+					<Route exact path="/login">
+						{loggedinUser ? (
+							<Redirect to={`user/${loggedinUser.id}`} />
+						) : (
+							<Login />
+						)}
+					</Route>
+				</Switch>
+			</main>
+		</div>
+	);
 }
 
 export default App;

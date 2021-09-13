@@ -1,8 +1,6 @@
 import create from "zustand";
 import { devtools } from "zustand/middleware";
-import { useEffect } from "react";
-import set from "date-fns/set";
-import Appointments from "./pages/Appointments";
+import { backEndBaseURL } from "./helpers";
 
 export type Faq = {
 	id: number;
@@ -178,39 +176,39 @@ const useStore = create<Store>(
 		setUserMessages: (messages) => set({ userMessages: messages }),
 
 		fetchFaqs: () => {
-			fetch("http://localhost:4000/faq")
+			fetch(`${backEndBaseURL}/faq`)
 				.then((res) => res.json())
 				.then((entity) => set({ faqs: entity.data }));
 		},
 		fetchServices: () => {
-			fetch("http://localhost:4000/services", { credentials: "include" })
+			fetch(`${backEndBaseURL}/services`, { credentials: "include" })
 				.then((res) => res.json())
 				.then((entity) => set({ services: entity.data }));
 		},
 		fetchCounsellors: () => {
-			fetch("http://localhost:4000/counsellors")
+			fetch(`${backEndBaseURL}/counsellors`)
 				.then((res) => res.json())
 				.then((entity) => set({ counsellors: entity.data }));
 		},
 		fetchCounsellorById: (id) => {
-			fetch(`http://localhost:4000/counsellors/${id}`)
+			fetch(`${backEndBaseURL}//counsellors/${id}`)
 				.then((res) => res.json())
 				.then((counsellor) => set({ counsellor: counsellor.data }));
 		},
 		fetchUser: (loggedinUser) => {
-			fetch(`http://localhost:4000/user/${loggedinUser.id}`, {
+			fetch(`${backEndBaseURL}/user/${loggedinUser.id}`, {
 				credentials: "include",
 			})
 				.then((res) => res.json())
 				.then((entity) => set({ user: entity.data }));
 		},
 		fetchLanguages: () => {
-			fetch("http://localhost:4000/languages")
+			fetch(`${backEndBaseURL}/languages`)
 				.then((res) => res.json())
 				.then((entity) => set({ languages: entity.data }));
 		},
 		fetchReviews: () => {
-			fetch("http://localhost:4000/reviews", { credentials: "include" })
+			fetch(`${backEndBaseURL}/reviews`, { credentials: "include" })
 				.then((res) => res.json())
 				.then((entity) => set({ reviews: entity.data }));
 		},
@@ -243,7 +241,7 @@ const useStore = create<Store>(
 
 		fetchMessagesByConversationId(conversation_ID) {
 			fetch(
-				`http://localhost:4000/messages/conversation/${conversation_ID}`,
+				`${backEndBaseURL}/messages/conversation/${conversation_ID}`,
 				{
 					credentials: "include",
 				}
@@ -255,7 +253,7 @@ const useStore = create<Store>(
 				});
 		},
 		postMessage(date, content, user_ID, conversation_ID) {
-			return fetch(`http://localhost:4000/messages`, {
+			return fetch(`${backEndBaseURL}/messages`, {
 				credentials: "include",
 				method: "POST",
 				headers: {
@@ -281,16 +279,13 @@ const useStore = create<Store>(
 		},
 
 		onDelete(appointment: Appointment) {
-			return fetch(
-				`http://localhost:4000/appointments/${appointment.id}`,
-				{
-					credentials: "include",
-					method: "DELETE",
-					headers: {
-						"Content-Type": "application/json",
-					},
-				}
-			)
+			return fetch(`${backEndBaseURL}/appointments/${appointment.id}`, {
+				credentials: "include",
+				method: "DELETE",
+				headers: {
+					"Content-Type": "application/json",
+				},
+			})
 				.then((res) => res.json())
 				.then(() => {
 					const user = get().user;
