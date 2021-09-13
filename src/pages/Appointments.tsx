@@ -4,7 +4,7 @@ import TextField from "@material-ui/core/TextField";
 import { useParams, Link } from "react-router-dom";
 import useStore from "../store";
 import "../styles/appointments.css";
-import { backEndBaseURL } from "../../../helpers";
+import { backEndBaseURL } from "../helpers";
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({

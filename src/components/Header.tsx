@@ -6,7 +6,7 @@ import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 // import Tab from "@material-ui/core/Tab";
 import { Link, Redirect, Route } from "react-router-dom";
 import useStore from "../store";
-import { backEndBaseURL } from "../../../helpers";
+import { backEndBaseURL } from "../helpers";
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({

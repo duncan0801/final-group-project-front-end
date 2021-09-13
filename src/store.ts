@@ -1,6 +1,6 @@
 import create from "zustand";
 import { devtools } from "zustand/middleware";
-import { backEndBaseURL } from "../../helpers";
+import { backEndBaseURL } from "./helpers";
 
 export type Faq = {
 	id: number;

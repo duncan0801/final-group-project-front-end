@@ -5,7 +5,7 @@ import "../styles/signup.css";
 // import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
 // import useStore from "../store";
-import { backEndBaseURL } from "../../../helpers";
+import { backEndBaseURL } from "../helpers";
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
